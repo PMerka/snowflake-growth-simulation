@@ -1,0 +1,35 @@
+.options-menu-wrapper{
+    background-color: var(--background-color-secondary);
+    flex-grow: 1;
+}
+
+.option-menu-list{
+    max-width: 600px;
+}
+
+@media (max-width: 800px){
+    .option-menu-list{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        height: auto;
+    }
+}
+
+.setting-title{
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus{
+    outline: 0;
+}

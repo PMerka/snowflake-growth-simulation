@@ -1,0 +1,16 @@
+.resolution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.restart-menu-option-title{
+    margin-bottom: 5px;
+}
+
+.restart-menu-confirm{
+    display: flex;
+    justify-content: center;
+}

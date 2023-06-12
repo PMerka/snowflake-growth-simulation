@@ -1,0 +1,29 @@
+#main-canvas{
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--background-color-secondary);
+}
+  
+:fullscreen #main-canvas{
+    width: 100vmin;
+}
+
+.options{
+    position: absolute;
+    align-items: center;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.canvasWrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-grow: 4;
+    background-color: var(--background-color-primary);
+
+}

@@ -1,0 +1,16 @@
+.flex-container{
+    margin: auto;
+    max-width: 980px;
+    min-width: 320px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+@media (max-width: 800px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
