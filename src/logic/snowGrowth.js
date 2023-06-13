@@ -5,10 +5,15 @@ import {
   getZeroMatrix
 } from "./simulationHelpers.js";
 
-
+/**
+ * 
+ * @param {Array of Arrays} grid 
+ * @param {number} size 
+ * @param {rectMap object} display 
+ * @param {number} addConstant 
+ * @param {number} diffusionParams 
+ */
 export function snowGrowth(grid, size, display, addConstant, diffusionParams) {
-    console.log(display)
-    var startTime = performance.now()
   
     //init receptive and nonreceptive part
     let nonreceptive = structuredClone(grid);
@@ -32,11 +37,5 @@ export function snowGrowth(grid, size, display, addConstant, diffusionParams) {
         update(i, j, grid, receptive, nonreceptive, diffusionParams);
       }
     }
-    var endTime = performance.now()
-    console.log(`Time to calculate one iteration ${endTime - startTime} milliseconds`)
-    
-    startTime = performance.now()
     display.update(grid)
-    endTime = performance.now()
-    console.log(`Time to display one iteration ${endTime - startTime} milliseconds`)
 }

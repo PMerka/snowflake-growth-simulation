@@ -1,10 +1,11 @@
-/*
-This class is used for drawing to canvas.
-*/
+
 // Use cellWidth and cellHeight aprox in ratio if hexagon width to hexagon height
-// fill() method is drawing rows in y direction for pointy hexagon  
 
+// fill() method is drawing rows in y direction for pointy hexagon (rows and collumns are fliped)
 
+/**
+ * Class is used for drawing to canvas.
+ */
 class rectMap{
     constructor(canvas, size, displayNthFrame = 10){
         this.canvas = canvas
@@ -23,6 +24,10 @@ class rectMap{
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     };
 
+    /**
+     * fill the cell in row and column
+     * @param {{column: number, row: number}} cell 
+     */
     fill = (cell) => {
         const y = cell.column
         const x = cell.row
@@ -41,11 +46,11 @@ class rectMap{
           return;
         }
 
+        // uncoment for canvas clear in every display
         //this.clearCanvas()
         for (let row = 0; row < this.size; row += 1) {
             for (let column = 0; column < this.size; column += 1) {
               if (grid[row][column] >= 1) {
-                const contrast = 1 - 0.2/grid[row][column]
                 this.fill({
                   column: column,
                   row: row,

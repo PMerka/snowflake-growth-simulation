@@ -1,0 +1,1 @@
+![Ilustration of algorithm](./AlgorihmSnowflakeGrowth.png)

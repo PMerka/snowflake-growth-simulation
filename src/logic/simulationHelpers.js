@@ -1,3 +1,10 @@
+/**
+ * Returns squere grid of numbers coresponding to initial background
+ * @param {number} size 
+ * @param {number} initValue 
+ * @param {number} randomness 
+ * @returns Array of arrays
+ */
 function getGrid(size, initValue, randomness){
   if(initValue+randomness>1){
     console.error("Bad initial condition! (initValue + randomness) is bigger than 1!")
@@ -26,9 +33,8 @@ function getZeroMatrix(size){
 
 
 function copyNeighbours(row, collumn, from, to, add = 0) {
-    //console.log(to[row - 1][collumn]);
     if (row % 2 === 0) {
-      //liché
+      //odd row
       to[row - 1][collumn] = from[row - 1][collumn] + add;
       to[row - 1][collumn + 1] = from[row - 1][collumn + 1] + add;
       to[row][collumn - 1] = from[row][collumn - 1] + add;
@@ -37,6 +43,7 @@ function copyNeighbours(row, collumn, from, to, add = 0) {
       to[row + 1][collumn] = from[row + 1][collumn] + add;
       to[row + 1][collumn + 1] = from[row + 1][collumn + 1] + add;
     } else {
+      //even row
       to[row - 1][collumn] = from[row - 1][collumn] + add;
       to[row - 1][collumn - 1] = from[row - 1][collumn - 1] + add;
       to[row][collumn - 1] = from[row][collumn - 1] + add;
@@ -48,7 +55,6 @@ function copyNeighbours(row, collumn, from, to, add = 0) {
 }
 
 function deleteNeighbours(row, collumn, to) {
-    //console.log(to[row - 1][collumn]);
     if (row % 2 === 0) {
       //liché
       to[row - 1][collumn] = 0;
