@@ -1,5 +1,6 @@
 {
-  "name": "snowflake-crystal",
+  "homepage": "https://pmerka.github.io/snowflake-growth-simulation/",
+  "name": "snowflake-growth-simulation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
