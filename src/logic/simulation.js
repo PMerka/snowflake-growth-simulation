@@ -10,6 +10,9 @@ export const defaultSetting = {
     alpha: 1, //difusion
 }
 
+/**
+ * Main class - controls simulation and store the canvas grid
+ */
 class Simulation{
     constructor({size, backgroundValue, backgroundRandomness, addConstant, alpha}){
         this.size = size
@@ -22,9 +25,12 @@ class Simulation{
         this.calcDifusionParams()
         const center = [Math.floor(size / 2), Math.floor(size / 2)];
         this.grid[center[1]][center[0]] = 1;
-        console.log(this.grid)
     }
 
+    /**
+     * Updates grid size to newSize
+     * @param {number} newSize 
+     */
     changeResolution = (newSize) => {
         this.size = newSize
         this.grid = getGrid(this.size, this.initValue, this.randomness)
@@ -39,13 +45,10 @@ class Simulation{
     }
 
     changeAddConstant = (newAddConstant) => {
-        console.log(typeof newAddConstant)
-        console.log(this)
         this.addConstant = newAddConstant
     }
 
     changeBackground = (newValue, randomness = 0) => {
-        console.log(newValue, randomness)
         this.grid = changeBackgroundValue(this.grid, this.size, newValue, randomness)
     }
 
@@ -59,8 +62,6 @@ class Simulation{
     }
 
     newIteration(){
-        console.log(this.grid)
-        console.log("Add", this.addConstant)
         snowGrowth(this.grid, this.size, this.display, this.addConstant, this.diffusionParams)
     }
 }
