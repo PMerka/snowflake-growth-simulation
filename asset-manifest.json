@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/snowflake-growth-simulation/static/css/main.628aaf38.css",
+    "main.js": "/snowflake-growth-simulation/static/js/main.f408e7f6.js",
+    "static/js/787.40ada38d.chunk.js": "/snowflake-growth-simulation/static/js/787.40ada38d.chunk.js",
+    "index.html": "/snowflake-growth-simulation/index.html",
+    "static/media/restart.svg": "/snowflake-growth-simulation/static/media/restart.606b20365e4db4b32c56eb6088f285c1.svg",
+    "static/media/download.svg": "/snowflake-growth-simulation/static/media/download.b8e7f66541e668595a40b7ec3156c7d5.svg",
+    "static/media/close.svg": "/snowflake-growth-simulation/static/media/close.a5d047cdcc8bd58efbebc343c4551cf8.svg",
+    "static/media/fullscrean.svg": "/snowflake-growth-simulation/static/media/fullscrean.cf6f7abd35e9b42f321ded1a665943d8.svg",
+    "static/media/stop.svg": "/snowflake-growth-simulation/static/media/stop.df576df63b30515392cf968272025471.svg",
+    "static/media/play.svg": "/snowflake-growth-simulation/static/media/play.ca3439924fe041d86fcce972ca9cc8ba.svg",
+    "main.628aaf38.css.map": "/snowflake-growth-simulation/static/css/main.628aaf38.css.map",
+    "main.f408e7f6.js.map": "/snowflake-growth-simulation/static/js/main.f408e7f6.js.map",
+    "787.40ada38d.chunk.js.map": "/snowflake-growth-simulation/static/js/787.40ada38d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.628aaf38.css",
+    "static/js/main.f408e7f6.js"
+  ]
+}
